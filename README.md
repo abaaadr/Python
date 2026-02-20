@@ -1,62 +1,119 @@
-# 🚀 Python Basics Learning Path (Week 1)
+# 🚀 Python Mastery Learning Path
 
-A structured 7-day plan to build strong Python fundamentals with daily practice + daily GitHub commits.
-
----
-
-## 📚 Mastering Python (Basics) — Week 1
-
-### 🟢 Week 1 Plan (Day 1 → Day 7)
-
-| #    | Day | Topic | 🟢 Recommended Time | 🟡 Goal | 🔴 Prerequisites | 📦 Deliverables |
-|------|-----|-------|---------------------|--------|------------------|----------------|
-| P01  | D1  | Setup Python + VS Code + Run Script | 30–60 min | تجهيز البيئة وتشغيل أول ملف `.py` | Basic computer literacy | `day1/notes.md`, `day1/hello.py` |
-| P02  | D1  | Basic Syntax + Indentation + Comments | 60–90 min | تفهم شكل الكود في بايثون وقواعد الـ indentation | P01 | `day1/syntax_basics.py` |
-| P03  | D1  | Variables + Naming + Input/Output | 60–90 min | تتعامل مع المتغيرات و `input()` و `print()` | P02 | `day1/tasks.py` |
-| P04  | D1  | Mini Task: Greeting Script | 30–45 min | أول سكريبت فعلي (اسم + سن + رسالة) | P03 | `day1/mini_task_greeting.py` |
-|------|-----|-------|---------------------|--------|------------------|----------------|
-| P05  | D2  | Data Types: int/float/str/bool | 60–90 min | تعرف الأنواع الأساسية وتفهم `type()` | P03 | `day2/types.py` |
-| P06  | D2  | Type Casting: int()/float()/str() | 45–75 min | تحول البيانات صح من input (string) لأرقام | P05 | `day2/casting.py` |
-| P07  | D2  | Operators: + - * / // % ** | 60–90 min | تتعامل مع العمليات والحسابات بدون لخبطه | P06 | `day2/operators_tasks.py` |
-| P08  | D2  | Mini Project: CLI Calculator v1 | 60–90 min | تعمل آلة حاسبة بسيطة (جمع/طرح/ضرب/قسمة) | P07 | `day2/calculator_v1.py` |
-|------|-----|-------|---------------------|--------|------------------|----------------|
-| P09  | D3  | Conditionals: if/elif/else | 60–90 min | تتحكم في مسار البرنامج بناءً على شروط | P07 | `day3/conditions.py` |
-| P10  | D3  | Comparisons + Logical ops (and/or/not) | 45–75 min | تكتب شروط مركبة بشكل صحيح | P09 | `day3/logic_tasks.py` |
-| P11  | D3  | Mini Task: Grade Checker | 45–75 min | برنامج درجات (A/B/C/D/F) | P10 | `day3/grade_checker.py` |
-| P12  | D3  | Mini Task: Simple Login Check | 45–75 min | تحقق يوزر/باسورد بسيط | P10 | `day3/simple_login.py` |
-|------|-----|-------|---------------------|--------|------------------|----------------|
-| P13  | D4  | Loops: for + range() | 60–90 min | تكرار وتنفيذ مهام على أرقام/قوائم | P09 | `day4/for_loop_tasks.py` |
-| P14  | D4  | while loop + loop control | 60–90 min | تكرار بشرط + تفهم الـ infinite loop | P13 | `day4/while_loop_tasks.py` |
-| P15  | D4  | break/continue | 30–45 min | تتحكم في مسار اللوب | P14 | `day4/break_continue.py` |
-| P16  | D4  | Mini Project: Guess The Number | 75–120 min | لعبة تخمين رقم + count attempts | P15 | `day4/guess_game.py` |
-|------|-----|-------|---------------------|--------|------------------|----------------|
-| P17  | D5  | Lists (create/index/slice/append/pop) | 75–120 min | تتعامل مع list كأداة يومية | P13 | `day5/lists.py` |
-| P18  | D5  | Tuples (immutability) | 30–45 min | تعرف إمتى تستخدم tuple | P17 | `day5/tuples.py` |
-| P19  | D5  | Sets (unique values) | 45–60 min | إزالة التكرارات + عمليات set | P17 | `day5/sets.py` |
-| P20  | D5  | Dictionaries (key/value) | 75–120 min | تخزين بيانات بشكل mapping | P17 | `day5/dicts.py` |
-| P21  | D5  | Mini Project: Students Grades Tracker v1 | 90–150 min | Menu بسيط لإضافة/تعديل/عرض درجات | P20 | `day5/students_tracker_v1.py` |
-|------|-----|-------|---------------------|--------|------------------|----------------|
-| P22  | D6  | Functions: def/params/return | 75–120 min | تفصل المنطق وتعيد استخدامه | P13 | `day6/functions_basics.py` |
-| P23  | D6  | Default args + simple scope | 45–75 min | تتحكم في الـ parameters وتفهم local/global | P22 | `day6/scope_defaults.py` |
-| P24  | D6  | Practice Functions: prime/factorial/even | 90–150 min | تبني مكتبة دوال صغيرة | P22 | `day6/math_utils.py` |
-| P25  | D6  | Refactor: Calculator & Tracker using functions | 90–150 min | تحول مشاريع سابقة لكود منظم | P24 | `day6/refactor_calculator.py`, `day6/refactor_tracker.py` |
-|------|-----|-------|---------------------|--------|------------------|----------------|
-| P26  | D7  | Exceptions: try/except + ValueError | 60–90 min | تمنع البرنامج يقع بسبب input غلط | P06, P22 | `day7/exceptions_basics.py` |
-| P27  | D7  | Input Validation patterns | 60–90 min | تتحقق من القيم قبل ما تستخدمها | P26 | `day7/validation_helpers.py` |
-| P28  | D7  | Final Project: CLI Menu App | 120–240 min | مشروع يجمع (Loops + Dict + Functions + Exceptions) | P21, P25, P27 | `day7/final_project.py`, `day7/README.md` |
+A comprehensive guide to mastering Python, related frameworks, and ecosystem tools from beginner to advanced level, structured perfectly for a systematic learning journey.
 
 ---
 
-## 📂 Repo Structure
+## 🐍 **Python Basics**
 
-```txt
-python-basics-week1/
-│
-├── README.md
-├── day1/
-├── day2/
-├── day3/
-├── day4/
-├── day5/
-├── day6/
-└── day7/
+### 🟢 **Core Fundamentals**
+| #   | Topic                                                                | 🟢 Recommended Time | 🟡 Goal                                                                         | 🔴 Prerequisites |
+| --- | -------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- | --------------- |
+| P01 | [Environment Setup & Intro](https://roadmap.sh/python)                 | 45-60 min          | Install Python, configure IDE, and understand the Python interpreter            | Basic computer literacy |
+| P02 | [Variables & Data Types](https://roadmap.sh/python)                    | 60-75 min          | Master strings, integers, floats, booleans, and basic type casting              | P01             |
+| P03 | [Operators](https://roadmap.sh/python)                                 | 45-60 min          | Understand arithmetic, logical, and comparison operators                        | P02             |
+| P04 | [Control Flow (If/Else)](https://roadmap.sh/python)                    | 60-75 min          | Master conditional statements and truthy/falsy evaluations                      | P03             |
+| P05 | [Loops (For/While)](https://roadmap.sh/python)                         | 75-90 min          | Implement iteration, use `range()`, `break`, `continue`, and `pass`             | P04             |
+| P06 | [Functions Fundamentals](https://roadmap.sh/python)                    | 90-120 min         | Define functions, handle arguments, parameters, and return values               | P05             |
+| P07 | [Exception Handling](https://roadmap.sh/python)                        | 60-90 min          | Manage errors gracefully using `try`, `except`, `else`, and `finally` blocks    | P06             |
+
+---
+
+## 📦 **Built-in Data Structures**
+
+| #   | Topic                                                                | 🟢 Recommended Time | 🟡 Goal                                                                         | 🔴 Prerequisites |
+| --- | -------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- | --------------- |
+| D01 | [Lists & Tuples](https://roadmap.sh/python)                            | 90-120 min         | Manage ordered collections, mutability vs immutability, slicing, and methods    | P05             |
+| D02 | [Dictionaries](https://roadmap.sh/python)                              | 75-90 min          | Master key-value pair mapping, iteration over dicts, and built-in methods       | D01             |
+| D03 | [Sets](https://roadmap.sh/python)                                      | 45-60 min          | Handle unique collections and perform mathematical set operations               | D01             |
+| D04 | [Comprehensions](https://roadmap.sh/python)                            | 60-75 min          | Write clean, Pythonic code using List, Set, and Dictionary comprehensions       | D01, D02, P06   |
+
+---
+
+## 🏛️ **Object-Oriented Programming (OOP)**
+
+| #   | Topic                                                                | 🟢 Recommended Time | 🟡 Goal                                                                         | 🔴 Prerequisites |
+| --- | -------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- | --------------- |
+| O01 | [Classes & Objects](https://roadmap.sh/python)                         | 60-90 min          | Understand OOP paradigm, `__init__`, and `self` keyword                         | P06             |
+| O02 | [Encapsulation & Properties](https://roadmap.sh/python)                | 75-90 min          | Hide data using private attributes and the `@property` decorator                | O01             |
+| O03 | [Inheritance](https://roadmap.sh/python)                               | 60-75 min          | Reuse logic through single and multiple inheritance, understand `super()`       | O01             |
+| O04 | [Polymorphism](https://roadmap.sh/python)                              | 45-60 min          | Implement method overriding and understand duck typing in Python                | O03             |
+| O05 | [Magic / Dunder Methods](https://roadmap.sh/python)                    | 75-90 min          | Customize class behavior for built-in Python operations (`__str__`, `__len__`)  | O01             |
+
+---
+
+## ⚙️ **Advanced Python Concepts**
+
+| #   | Topic                                                                | 🟢 Recommended Time | 🟡 Goal                                                                         | 🔴 Prerequisites |
+| --- | -------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- | --------------- |
+| A01 | [Modules & Packages](https://roadmap.sh/python)                        | 60-75 min          | Organize code into files/directories using `import` and `__init__.py`           | P06, O01        |
+| A02 | [PIP & Virtual Environments](https://roadmap.sh/python)                | 60-90 min          | Isolate environments (`venv`) and manage packages (conceptually like Composer)  | A01             |
+| A03 | [Iterators & Generators](https://roadmap.sh/python)                    | 90-120 min         | Build memory-efficient data streams using the `yield` keyword                   | D01, P06        |
+| A04 | [Decorators](https://roadmap.sh/python)                                | 90-120 min         | Modify function behavior dynamically (similar to middleware pattern concepts)   | P06             |
+| A05 | [Context Managers](https://roadmap.sh/python)                          | 60-75 min          | Safely manage resources (like file I/O) using the `with` statement              | P07, O05        |
+| A06 | [Regular Expressions (re)](https://roadmap.sh/python)                  | 75-90 min          | Search, match, and manipulate text using complex string patterns                | P02             |
+
+---
+
+## 🗄️ **Databases & ORM**
+
+| #   | Topic                                                                | 🟢 Recommended Time | 🟡 Goal                                                                         | 🔴 Prerequisites |
+| --- | -------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- | --------------- |
+| DB1 | [Relational Databases (SQL)](https://roadmap.sh/python)                | 90-120 min         | Connect to PostgreSQL/MySQL and execute queries using `psycopg2` or `pymysql`   | A02             |
+| DB2 | [SQLAlchemy & ORMs](https://roadmap.sh/python)                         | 120-150 min        | Map DB tables to Python classes for intuitive data access (similar to Eloquent) | DB1, O01        |
+| DB3 | [NoSQL Databases](https://roadmap.sh/python)                           | 75-90 min          | Work with document-based databases like MongoDB using `pymongo`                 | A02, D02        |
+
+---
+
+## 🌐 **Web Frameworks Specialization**
+
+| #   | Topic                                                                | 🟢 Recommended Time | 🟡 Goal                                                                         | 🔴 Prerequisites |
+| --- | -------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- | --------------- |
+| W01 | [Flask Fundamentals](https://roadmap.sh/python)                        | 120-150 min        | Build lightweight web applications and microservices                            | A02, A04        |
+| W02 | [Django Deep Dive](https://roadmap.sh/python)                          | 180-240 min        | Master a batteries-included MVC/MVT framework (similar architecture to Laravel) | A02, DB2, O03   |
+| W03 | [FastAPI & Async Web](https://roadmap.sh/python)                       | 120-180 min        | Create extremely fast, modern APIs using Pydantic and OpenAPI                   | W01 or W02, C02 |
+
+---
+
+## ⚡ **Concurrency & Performance**
+
+| #   | Topic                                                                | 🟢 Recommended Time | 🟡 Goal                                                                         | 🔴 Prerequisites |
+| --- | -------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- | --------------- |
+| C01 | [Threading & Multiprocessing](https://roadmap.sh/python)               | 90-120 min         | Bypass the GIL for CPU/IO-bound tasks using multiple threads/processes          | A01             |
+| C02 | [AsyncIO](https://roadmap.sh/python)                                   | 120-150 min        | Write non-blocking, highly concurrent code using `async` and `await`            | A03             |
+
+---
+
+## 🧪 **Testing & Quality Assurance**
+
+| #   | Topic                                                                | 🟢 Recommended Time | 🟡 Goal                                                                         | 🔴 Prerequisites |
+| --- | -------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- | --------------- |
+| T01 | [unittest](https://roadmap.sh/python)                                  | 60-90 min          | Understand the built-in testing library and testing assertions                  | P06, O01        |
+| T02 | [PyTest](https://roadmap.sh/python)                                    | 90-120 min         | Write robust automated tests with fixtures (similar to PHPUnit workflows)       | T01             |
+| T03 | [Mocking](https://roadmap.sh/python)                                   | 75-90 min          | Isolate code by mocking external dependencies (APIs, Databases)                 | T02             |
+
+---
+
+## 📈 **Learning Path Recommendation**
+
+**Phase 1: Python Core (Weeks 1-3)**
+1. Focus entirely on **Core Fundamentals** (P01-P07).
+2. Master the **Built-in Data Structures** (D01-D04). Don't rush comprehensions; they are heavily used in Python.
+
+**Phase 2: Architecture & Advanced (Weeks 4-6)**
+1. Learn **Object-Oriented Programming** (O01-O05).
+2. Deepen your knowledge with **Advanced Python Concepts** (A01-A06), focusing heavily on Virtual Environments, PIP, and Decorators.
+3. Start writing basic scripts to automate daily tasks.
+
+**Phase 3: Backend & Data (Weeks 7-9)**
+1. Connect Python to data using **Databases & ORM** (DB1-DB3).
+2. Learn how to ensure reliability with **Testing** (T01-T03).
+
+**Phase 4: Web Specialization (Weeks 10-12)**
+1. Pick one track from **Web Frameworks** (W01-W03). 
+   * *Tip:* Django will feel very familiar if you are coming from robust MVC frameworks, while FastAPI is excellent for pure API development.
+2. Advance to **Concurrency** (C01-C02) to scale your web apps.
+
+---
+
+*Happy Coding! 🐍*
