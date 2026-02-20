@@ -1,39 +1,36 @@
-# 🐍 Python Roadmap | الأساسيات (Week 1)
+# 🐍 Python Basics Roadmap (Week 1) | خطة الأساسيات أسبوع
 
-> خطة أسبوع واحد لتأسيس Python Fundamentals بشكل عملي + كوميت يومي على GitHub
+خطة أسبوع واحد لتأسيس Python Fundamentals بشكل عملي.  
+القاعدة: **تطبيق + كوميت يومي**.
 
 ---
 
-## ✅ قبل ما تبدأ (Prerequisites)
-يفضل تكون:
-1) عارف أساسيات الكمبيوتر والتعامل مع الملفات  
-2) عندك فكرة بسيطة عن البرمجة (مش شرط)  
-
-### أدوات مطلوبة
+## ✅ Prerequisites (قبل ما تبدأ)
 - Python 3.x
 - VS Code
-- Git (عشان الكوميتات اليومية)
+- Git + GitHub account
 
 ---
 
-## 🎯 هدف الأسبوع الأول
-- تفهم Syntax و I/O
-- تتعامل مع Data Types + Type Casting
+## 🎯 Week Goal (هدف الأسبوع)
+بنهاية الأسبوع تكون قادر:
+- تكتب برامج CLI بسيطة (Input/Output)
+- تفهم وتستخدم Data Types + Type Casting
 - تكتب Conditions + Loops
-- تستخدم Data Structures الأساسية (List/Tuple/Set/Dict)
-- تعمل Functions
-- تتعامل مع Exceptions
-- تعمل Mini Project بسيط في آخر الأسبوع
+- تستخدم List / Tuple / Set / Dict بثقة
+- تكتب Functions وتفصل الكود
+- تتعامل مع الأخطاء بـ Exceptions
+- تعمل **Final Mini Project** محترم في اليوم السابع
 
 ---
 
-## 🗺️ خريطة الأسبوع (Weekly Map)
+## 🗺️ Weekly Map
 
 ```mermaid
 graph LR
-A[Day 1] --> B[Day 2]
-B --> C[Day 3]
-C --> D[Day 4]
-D --> E[Day 5]
-E --> F[Day 6]
-F --> G[Day 7 - Final Mini Project]
+A[Day 1: Setup + Syntax] --> B[Day 2: Data Types + Casting]
+B --> C[Day 3: Conditionals]
+C --> D[Day 4: Loops]
+D --> E[Day 5: Data Structures]
+E --> F[Day 6: Functions]
+F --> G[Day 7: Exceptions + Final Project]
