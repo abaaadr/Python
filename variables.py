@@ -1,2 +1,5 @@
+# Variable 1
 string = "hello world"
-print(string)
+# Variable 2
+sentance = 'I,Love,Python'
+
